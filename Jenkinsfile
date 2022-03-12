@@ -37,7 +37,6 @@ echo "started aight"'''
     stage('stage-3') {
       steps {
         echo 'one more time'
-        sh start.sh
       }
     }
 
