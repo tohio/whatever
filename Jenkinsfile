@@ -1,7 +1,5 @@
 pipeline {
   agent any
-  parameters {
-    string(name: 'Version', defaultValue: '1.0.0', description: 'Version Number')
   stages {
     stage('stage-1') {
       parallel {
@@ -46,7 +44,6 @@ echo "started aight"'''
 
     stage('stage-4') {
       steps {
-        echo "${params.Version} to be deployed"
         echo 'we are done'
       }
     }
