@@ -49,4 +49,8 @@ echo "started aight"'''
     }
 
   }
+  environment {
+    Name = 'mysql'
+    version = '8.0'
+  }
 }
