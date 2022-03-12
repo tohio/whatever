@@ -44,14 +44,16 @@ echo "started aight"'''
 
     stage('stage-4') {
       steps {
+        echo "${params.Version} to be deployed"
+        echo "${NAME} ${VERSION} to be deployed"
         echo 'we are done'
       }
     }
 
   }
   environment {
-    Name = 'mysql'
-    version = '8.0'
+    NAME = 'mysql'
+    VERSION = '8.0'
   }
    parameters {
      string(name: 'Version', defaultValue: '1.0.0', description: 'Version Number')
