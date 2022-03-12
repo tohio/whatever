@@ -53,4 +53,7 @@ echo "started aight"'''
     Name = 'mysql'
     version = '8.0'
   }
+   parameters {
+     string(name: 'Version', defaultValue: '1.0.0', description: 'Version Number')
+   }
 }
