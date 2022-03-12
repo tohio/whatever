@@ -37,7 +37,7 @@ echo "started aight"'''
     stage('stage-3') {
       steps {
         echo 'one more time'
-        sh "chmod +x ./start.sh"
+        sh 'chmod 777 ./start.sh'
         sh './start.sh'
       }
     }
