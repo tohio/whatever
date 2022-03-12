@@ -29,7 +29,7 @@ pipeline {
       steps {
         sh '''#!/bin/bash
 echo "we starting ok!"
-sleep 60
+sleep 10
 echo "started aight"'''
       }
     }
