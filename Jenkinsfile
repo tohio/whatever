@@ -30,13 +30,14 @@ pipeline {
         sh '''#!/bin/bash
 echo "we starting ok!"
 sleep 60
-Echo "started aight"'''
+echo "started aight"'''
       }
     }
 
     stage('stage-3') {
       steps {
-        sleep 30
+        echo 'one more time'
+        sh start.sh
       }
     }
 
