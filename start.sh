@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo starting....
-sleep 120
+sleep 10
 echo done
